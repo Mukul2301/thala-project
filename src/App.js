@@ -24,7 +24,8 @@ function App() {
   const conditions =
     inputValue.includes("7") ||
     inputValue.length === 7 ||
-    isSumSeven(inputValue);
+    isSumSeven(inputValue) ||
+    inputValue.toLowerCase() === "seven";
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -63,6 +64,7 @@ function App() {
             <img src={gif} alt="GIF" />
             {inputValue.includes("7") && <p>You have entered 7🥳</p>}
             {inputValue.length === 7 && <p>7 characters🥳</p>}
+            {inputValue.toLowerCase() === "seven" && <p>you wrote seven</p>}
             {inputValue.length > 1 && isSumSeven(inputValue) && (
               <p>It all adds up🥳</p>
             )}
