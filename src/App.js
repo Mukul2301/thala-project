@@ -86,6 +86,7 @@ function App() {
         <a
           href="https://www.instagram.com/mukul_shende?igsh=MTMzZDFuOTB5bmczYg=="
           target="_blank"
+          rel="noreferrer"
         >
           <img className="insta" src={ig} alt="IG icon" />
         </a>
