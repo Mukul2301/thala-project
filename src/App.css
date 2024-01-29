@@ -15,6 +15,7 @@
   object-fit: cover;
   position: relative;
   min-height: 100vh;
+  transition: background-position-x 0.5s ease;
 }
 
 h1 {
@@ -121,6 +122,9 @@ footer p {
 }
 
 @media screen and (max-width: 1700px) {
+  .App {
+    background-position-x: 50%;
+  }
   .video {
     height: 400px;
     width: 400px;
@@ -128,5 +132,11 @@ footer p {
   .content img {
     width: 350px;
     height: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    background-position-x: 70%;
   }
 }
